@@ -16,4 +16,16 @@ public class StudentService {
     public List<Student>  fetchAllStudents(){
         return this.studentRepo.findAll();
     }
+
+    public Student saveStudents(Student details) {
+        return this.studentRepo.save(details);
+    }
+
+    public Student updateStudentDetail(Student details) {
+        return this.studentRepo.save(details);
+    }
+
+    public void deleteStudentById(Long id) {
+        this.studentRepo.deleteById(id);
+    }
 }
